@@ -1,0 +1,48 @@
+{
+    "name": "kospack",
+    "description": "おれの",
+    "version": "1.0.3",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": [
+                "ytadblock-v3.js"
+            ],
+            "run_at": "document_idle",
+            "all_frames": false
+        },
+        {
+            "matches": ["https://classroom.google.com/*"],
+            "js": [
+                "classroom.js"
+            ],
+            "run_at": "document_idle",
+            "all_frames": false
+        },
+        {
+            "matches": ["https://twitter.com/*", "https://x.com/*"],
+            "js": [
+                "twadblock.js"
+            ],
+            "run_at": "document_idle",
+            "all_frames": false
+        },
+        {
+            "matches": ["https://www.pixiv.net/*"],
+            "js": [
+                "pixivlock.js"
+            ],
+            "run_at": "document_idle",
+            "all_frames": false
+        },
+        {
+            "matches": ["https://game8.jp/*"],
+            "js": [
+                "game8adblock.js"
+            ],
+            "run_at": "document_idle",
+            "all_frames": false
+        }
+    ]
+}
